@@ -80,7 +80,7 @@ li {
 }
 
 .text--purple {
-  color: #6030b1;
+  color: Coral;
 }
 
 section:nth-child(even) {
@@ -115,7 +115,7 @@ nav {
 }
 
 .nav__link--anchor-primary {
-  background-color: #6030b1;
+  background-color: Coral;
   padding: 8px 20px;
   border-radius: 50px;
   color: white;
@@ -128,7 +128,7 @@ nav {
 
 .personal__logo {
   font-size: 24px;
-  color: #6030b1;
+  color: Coral;
   margin: 0 12px;
   font-weight: bold
 }
