@@ -32,7 +32,7 @@ a {
 }
 
 i:hover {
-  opacity: 0.7;
+  opacity: 0.4;
 }
 
 .link__hover-effect:after {
@@ -162,7 +162,9 @@ nav {
   overflow: hidden;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.16);
   margin-bottom: 28px;
-  animation: animate-profile-picture 800ms 200ms backwards;
+  animation: animate-profile-picture 1600ms 200ms backwards;
+  /** links ist die verzögerung wie es aufgeht,
+   rechts ist die verzögerung wann es erscheint **/
 }
 
 @keyframes animate-profile-picture {
@@ -187,12 +189,12 @@ nav {
 
 .about-me__info--title {
   margin-bottom: 16px;
-  animation: fade-up 650ms 400ms backwards;
+  animation: fade-up 1050ms 1000ms backwards;
 }
 .about-me__info--para {
   font-size: 20px;
   margin-bottom: 28px;
-  animation: fade-up 650ms 600ms backwards;
+  animation: fade-up 1050ms 1400ms backwards;
 }
 
 .about-me__link {
@@ -202,7 +204,9 @@ nav {
 }
 
 .about-me__links {
-  animation: fade-up 650ms 800ms backwards;
+  animation: fade-up 1050ms 1800ms backwards;
+    /** links ist die Geschwindigkeit wie es hoch geht,
+   rechts ist die verzögerung wann es erscheint **/
 }
 
 @keyframes fade-up {
@@ -237,7 +241,7 @@ nav {
 
 .wave {
   display: inline-block;
-  animation: animate-wave 500ms infinite ease-in-out;
+  animation: animate-wave 1500ms infinite ease-in-out;
 }
 
 @keyframes animate-wave {
