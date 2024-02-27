@@ -5,6 +5,21 @@
   margin: 0;
   box-sizing: border-box;
 }
+.dark-theme {
+  background-color: rgb(36, 35, 35);
+
+  section:nth-child(even)  {
+    background-color: #242424;
+  }
+  .nav__link--anchor, .about-me__link {
+    color: white;
+  }
+  
+}
+
+.dark-theme * {
+  color: white;
+}
 
 html {
   scroll-behavior: smooth;
@@ -106,6 +121,9 @@ nav {
 
 .nav__link--list {
   display: flex;
+  align-items: center;
+  max-width: 600px;
+  text-align: center;
 }
 
 .nav__link--anchor {
@@ -115,7 +133,7 @@ nav {
 }
 
 .nav__link--anchor-primary {
-  background-color: Coral;
+  background-color: #ff7f50;
   padding: 8px 20px;
   border-radius: 50px;
   color: white;
@@ -270,7 +288,7 @@ nav {
 }
 
 .language {
-  width: 25%;
+  width: 20%;
   display: flex;
   justify-content: center;
   position: relative;
@@ -391,6 +409,7 @@ nav {
 
 footer {
   background-color: #242424;
+  max-height: 250px;
 }
 
 .footer__social--list {
@@ -405,12 +424,26 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 8% 0;
+  padding: 5% 0;
+  max-height: 50px;
 }
 
 .footer__logo--img {
   width: 70px;
   height: 70px;
+}
+
+.navbar__logo--img {
+  display: flex;
+  align-self: center;
+  width: 40px;
+  height: 40px;
+}
+
+.navbar__logo--img:hover{
+  filter: brightness(80%);
+  opacity: 0.8;
+  transform: scale(1.2);
 }
 
 .footer__social--link,

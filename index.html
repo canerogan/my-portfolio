@@ -5,35 +5,47 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Caner Ogan</title>
+  <script src="./app.js" defer></script>
+  <title>Caner Oğan</title>
   <link rel="stylesheet" href="./styles.css">
   <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+  <link rel="icon" href="./assets/logo.svg" type="image/x-icon">
 </head>
 
 <body>
   <section id="about-me">
     <nav>
-      <div class="personal__logo">Caner Oğan</div>
+      <div class="personal__logo">Caner Oğan
+        
+      </div>
       <ul class="nav__link--list">
         <li class="nav__link">
           <a href="#languages" class="
             nav__link--anchor
             link__hover-effect
             link__hover-effect--black
-          ">Languages</a>
+          ">Technologien</a>
         </li>
         <li class="nav__link">
           <a href="#projects" class="
             nav__link--anchor
             link__hover-effect
             link__hover-effect--black
-          ">Projects</a>
+          ">Projekte</a>
         </li>
         <li class="nav__link">
           <a href="mailto:canerogan@icloud.com" class="
             nav__link--anchor
             nav__link--anchor-primary
-          ">Contact</a>
+          ">Kontakt</a>
+        </li>
+        <li class="nav__link">
+            <img id="darktheme"
+            class="
+            nav__link--anchor
+            navbar__logo--img" 
+            src="./assets/darktheme_icon.svg" 
+            alt="darktheme icon" onclick="toggleDarkMode()">
         </li>
       </ul>
     </nav>
@@ -75,7 +87,7 @@
   <section id="languages">
     <div class="container">
       <div class="row">
-        <h1 class="section__title">This is my <span class="text--purple">technology stack</span></h1>
+        <h1 class="section__title">Diese  <span class="text--purple">Technologien</span> habe ich drauf</h1>
         <div class="language__list">
           <div class="language">
             <figure class="language__img--wrapper">
@@ -106,20 +118,7 @@
             </figure>
             <span class="language__name">TypeScript</span>
           </div>
-          <div class="language">
-            <figure class="language__img--wrapper">
-              <img src="https://cdn.iconscout.com/icon/free/png-256/vue-282497.png" alt="Vue Logo"
-                class="language__img" />
-            </figure>
-            <span class="language__name">Vue</span>
-          </div>
-          <div class="language">
-            <figure class="language__img--wrapper">
-              <img src="https://cdn.iconscout.com/icon/free/png-256/nuxt-dot-js-3628959-3030184.png" alt="Nuxt Logo"
-                class="language__img" />
-            </figure>
-            <span class="language__name">Nuxt</span>
-          </div>
+
           <div class="language">
             <figure class="language__img--wrapper">
               <img src="https://cdn.iconscout.com/icon/free/png-256/react-3-1175109.png" alt="React Logo"
@@ -127,12 +126,7 @@
             </figure>
             <span class="language__name">React</span>
           </div>
-          <div class="language">
-            <figure class="language__img--wrapper">
-              <img src="https://mobx.js.org/img/mobx.png" alt="MobX Logo" class="language__img" />
-            </figure>
-            <span class="language__name">MobX</span>
-          </div>
+
         </div>
       </div>
     </div>
@@ -140,7 +134,7 @@
   <section id="projects">
     <div class="container">
       <div class="row">
-        <h1 class="section__title">Here are some of my <span class="text--purple">projects (One yet)</span></h1>
+        <h1 class="section__title">Hier sind einige meiner <span class="text--purple">Projekte (One yet)</span></h1>
         <ul class="project__list">
           <li class="project">
             <div class="project__wrapper">
@@ -148,7 +142,7 @@
               <div class="project__description">
                 <h3 class="project__description--title">E-Library project</h3>
                 <h4 class="project__description--sub-title">
-                  Html, CSS, JavaScript, Vue, Vuex
+                  Html, CSS, JavaScript
                 </h4>
                 <p class="project__description--para">
                   In this project my focus was on responsive Design by using CSS.
@@ -170,7 +164,7 @@
               <div class="project__description">
                 <h3 class="project__description--title">Car sales project</h3>
                 <h4 class="project__description--sub-title">
-                  Html, CSS, JavaScript, Vue, Vuex
+                  Html, CSS, JavaScript
                 </h4>
                 <p class="project__description--para">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed diam leo, scelerisque sed odio eget,
@@ -194,7 +188,7 @@
               <div class="project__description">
                 <h3 class="project__description--title">Dashboard</h3>
                 <h4 class="project__description--sub-title">
-                  Html, CSS, JavaScript, Vue, Vuex
+                  Html, CSS, JavaScript
                 </h4>
                 <p class="project__description--para">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed diam leo, scelerisque sed odio eget,
@@ -223,7 +217,7 @@
           <img src="./assets/logo.svg" class="footer__logo--img" alt="">
         </figure>
         <span class="footer__logo--popper">
-          Top
+          Hoch
           <i class="fas fa-arrow-up"></i>
         </span>
       </a>
@@ -249,7 +243,7 @@
           link__hover-effect--white
         " target="_blank">Resume</a>
       </div>
-      <div class="footer__copyright">Copyright © 2023 Caner Oğan</div>
+      <div class="footer__copyright">Copyright © 2024 Caner Oğan</div>
     </div>
   </footer>
 </body>

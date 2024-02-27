@@ -4,6 +4,6 @@
     <g transform="matrix(0.998801,0,0,0.998801,-10.1381,-5.77639)">
         <g transform="matrix(483.026,0,0,483.026,629.035,365.87)">
         </g>
-        <text x="4px" y="365.87px" style="font-family:'Phosphate-Inline', 'Phosphate';font-size:483.026px;fill:rgb(255,127,80);stroke:rgb(161,148,148);stroke-width:1px;">C<tspan x="271.596px " y="365.87px ">O</tspan></text>
+        <text x="4px" y="365.87px" style="font-family:'Phosphate-Inline', 'Phosphate';font-size:483.026px;fill:white;stroke:rgb(161,148,148);stroke-width:1px;">C<tspan x="271.596px " y="365.87px ">O</tspan></text>
     </g>
 </svg>
