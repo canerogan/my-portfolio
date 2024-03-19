@@ -13,7 +13,6 @@ function toggleDarkMode() {
 }
 
 // EasterEgg Aktion
-
 document.addEventListener("DOMContentLoaded", easterEggAction);
 
 function easterEggAction() {
