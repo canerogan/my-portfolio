@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
 * {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -8,13 +8,25 @@
 .dark-theme {
   background-color: rgb(36, 35, 35);
 
-  section:nth-child(even)  {
+  section:nth-child(even) {
     background-color: #242424;
   }
-  .nav__link--anchor, .about-me__link {
+  .nav__link--anchor,
+  .about-me__link {
     color: white;
   }
-  
+
+  .nav__link--anchor-primary {
+    background-color: #ff7f50;
+    padding: 8px 20px;
+    border-radius: 50px;
+    color: #242424;
+    transition: all 300ms ease;
+  }
+
+  .nav__link--anchor-primary:hover {
+    background-color: white;
+  }
 }
 
 .dark-theme * {
@@ -25,7 +37,13 @@ html {
   scroll-behavior: smooth;
 }
 
-h1, h2, h3, h4, h5, h6, span {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span {
   color: #242424;
   text-align: center;
   line-height: 1.25;
@@ -141,14 +159,15 @@ nav {
 }
 
 .nav__link--anchor-primary:hover {
-  background-color: #5d3eff;
+  background-color: #242424;
 }
 
 .personal__logo {
+  cursor: pointer;
   font-size: 24px;
   color: Coral;
   margin: 0 12px;
-  font-weight: bold
+  font-weight: bold;
 }
 
 /* ABOUT ME */
@@ -223,7 +242,7 @@ nav {
 
 .about-me__links {
   animation: fade-up 1050ms 1800ms backwards;
-    /** links ist die Geschwindigkeit wie es hoch geht,
+  /** links ist die Geschwindigkeit wie es hoch geht,
    rechts ist die verzögerung wann es erscheint **/
 }
 
@@ -440,7 +459,7 @@ footer {
   height: 40px;
 }
 
-.navbar__logo--img:hover{
+.navbar__logo--img:hover {
   filter: brightness(80%);
   opacity: 0.8;
   transform: scale(1.2);
@@ -535,3 +554,64 @@ footer {
     margin: 12px 0;
   }
 }
+
+/* Modal zum kontaktieren */
+#easteregg {
+  display: none;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  max-width: 1100px;
+  height: 700px;
+  box-shadow: 0 20px 80px 0 rgb(0, 0, 0.55);
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+}
+
+.modal__half {
+  width: 50%;
+  padding: 40px 52px;
+}
+
+.modal__about {
+  /* Linke Seite vom Modal */
+  background-color: rgb(255, 198, 67);
+  display: flex;
+  flex-direction: column;
+}
+
+.modal__contact {
+  /* Rechte Seite vom Modal */
+  background-color: coral;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Languages */
+.modal__TechStack {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.modal__os {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.modal__TechStackItem {
+  width: 20%;
+  padding: 8px;
+  margin: 0 auto;
+}
+
+.modal__TechStackItem--img {
+  width: 100%;
+}
+
+/* Modal zum kontaktieren */

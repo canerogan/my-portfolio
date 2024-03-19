@@ -2,50 +2,37 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script src="./app.js" defer></script>
   <title>Caner Oğan</title>
-  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./styles.css" />
   <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
-  <link rel="icon" href="./assets/logo.svg" type="image/x-icon">
+  <link rel="icon" href="./assets/logo.svg" type="image/x-icon" />
 </head>
 
 <body>
   <section id="about-me">
     <nav>
-      <div class="personal__logo">Caner Oğan
-        
+      <div class="personal__logo" id="eastereggButton">
+        <figure class="footer__logo">
+          <img src="./assets/logo.svg" class="footer__logo--img" alt="" />
+        </figure>
       </div>
       <ul class="nav__link--list">
         <li class="nav__link">
-          <a href="#languages" class="
-            nav__link--anchor
-            link__hover-effect
-            link__hover-effect--black
-          ">Tech Stack</a>
+          <a href="#languages" class="nav__link--anchor link__hover-effect link__hover-effect--black">Tech Stack</a>
         </li>
         <li class="nav__link">
-          <a href="#projects" class="
-            nav__link--anchor
-            link__hover-effect
-            link__hover-effect--black
-          ">Projekte</a>
+          <a href="#projects" class="nav__link--anchor link__hover-effect link__hover-effect--black">Projekte</a>
         </li>
         <li class="nav__link">
-          <a href="mailto:canerogan@icloud.com" class="
-            nav__link--anchor
-            nav__link--anchor-primary
-          ">Kontakt</a>
+          <a href="mailto:canerogan@icloud.com" class="nav__link--anchor nav__link--anchor-primary">Kontakt</a>
         </li>
         <li class="nav__link">
-            <img id="darktheme"
-            class="
-            nav__link--anchor
-            navbar__logo--img" 
-            src="./assets/darktheme_icon.svg" 
-            alt="darktheme icon" onclick="toggleDarkMode()">
+          <img id="darktheme" class="nav__link--anchor navbar__logo--img" src="./assets/darktheme_icon.svg"
+            alt="darktheme icon" onclick="toggleDarkMode()" />
         </li>
       </ul>
     </nav>
@@ -53,22 +40,24 @@
       <div class="about-me__info row">
         <div class="about-me__info--container">
           <figure class="about-me__picture--mask">
-            <img src="./assets/me.jpeg" class="about-me__picture" alt="Picture of Me!">
+            <img src="./assets/me.jpeg" class="about-me__picture" alt="Picture of Me!" />
           </figure>
           <h1 class="about-me__info--title">
             Hallo! Ich bin <span class="text--coral">Caner</span>&nbsp;<span class="wave">👋</span>
           </h1>
           <p class="about-me__info--para">
-            Ich studiere <strong class="text--coral">Wirtschaftsinformatik</strong> 
-            und absolviere aktuell ein Frontend Developer Bootcamp. Mein Ziel ist es ein kleines Portfolio 
-            aufzubauen womit ich mich als <strong class="text--coral">Webentwickler</strong> bewerben kann.
+            Ich studiere
+            <strong class="text--coral">Wirtschaftsinformatik</strong> und
+            absolviere aktuell ein Frontend Developer Bootcamp. Mein Ziel ist
+            es ein kleines Portfolio aufzubauen womit ich mich als
+            <strong class="text--coral">Webentwickler</strong> bewerben kann.
           </p>
           <div class="about-me__links">
             <a href="https://www.github.com/canerogan" target="_blank" class="about-me__link">
               <i class="fab fa-github"></i>
-            <a href="https://www.linkedin.com/in/caner-o%C4%9Fan-2b99a61a6/" target="_blank" class="about-me__link">
-              <i class="fab fa-linkedin-in"></i>
-            </a>
+              <a href="https://www.linkedin.com/in/caner-o%C4%9Fan-2b99a61a6/" target="_blank" class="about-me__link">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
             </a>
             <a href="mailto:canerogan@icloud.com" target="_blank" class="about-me__link">
               <i class="far fa-envelope"></i>
@@ -79,79 +68,233 @@
           </div>
         </div>
         <figure class="about-me__img--container">
-          <img src="./assets/undraw_websites.svg" class="about-me__img" alt="">
+          <img src="./assets/undraw_websites.svg" class="about-me__img" alt="" />
         </figure>
+      </div>
+    </div>
+    <div id="easteregg" style="display: none">
+      <div class="modal">
+        <div class="modal__half modal__about">
+          <h3>Ein paar Informationen über mich:</h3>
+          <h4>Fullstack-Entwickler</h4>
+          <p class="contact_modal__para">
+            hier kommt ein bisschen Text rein.
+            <br />
+            <br />
+            Content: mich selbst gut verkaufen:
+            <br />
+            und hervorheben, dass ich ein breites an Interesse an Verschiedene
+            Technologien habe und gerne lerne.
+            <br />
+          </p>
+
+          <div class="modal__os">
+            <figure class="modal__TechStackItem">
+              <img class="modal__TechStackItem--img" src="./assets/mixed_svg_logos/windows.svg" alt="TechStack Logo" />
+            </figure>
+            <figure class="modal__TechStackItem">
+              <img class="modal__TechStackItem--img" src="./assets/mixed_svg_logos/mac.svg" alt="TechStack Logo" />
+            </figure>
+            <figure class="modal__TechStackItem">
+              <img class="modal__TechStackItem--img" src="./assets/mixed_svg_logos/linux.svg" alt="TechStack Logo" />
+            </figure>
+          </div>
+
+          <div class="modal__TechStack">
+            <figure class="modal__TechStackItem">
+              <img class="modal__TechStackItem--img" src="./assets/mixed_svg_logos/html.svg" alt="TechStack Logo" />
+            </figure>
+            <figure class="modal__TechStackItem">
+              <img class="modal__TechStackItem--img" src="./assets/mixed_svg_logos/css.svg" alt="TechStack Logo" />
+            </figure>
+            <figure class="modal__TechStackItem">
+              <img class="modal__TechStackItem--img" src="./assets/mixed_svg_logos/JavaScript.svg"
+                alt="TechStack Logo" />
+            </figure>
+            <figure class="modal__TechStackItem">
+              <img class="modal__TechStackItem--img" src="./assets/mixed_svg_logos/TypeScript.svg"
+                alt="TechStack Logo" />
+            </figure>
+            <figure class="modal__TechStackItem">
+              <img class="modal__TechStackItem--img" src="./assets/mixed_svg_logos/react.svg" alt="TechStack Logo" />
+            </figure>
+            <figure class="modal__TechStackItem">
+              <img class="modal__TechStackItem--img" src="./assets/mixed_svg_logos/java.svg" alt="TechStack Logo" />
+            </figure>
+            <figure class="modal__TechStackItem">
+              <img class="modal__TechStackItem--img" src="./assets/mixed_svg_logos/c-sharp.svg" alt="TechStack Logo" />
+            </figure>
+            <figure class="modal__TechStackItem">
+              <img class="modal__TechStackItem--img" src="./assets/mixed_svg_logos/python.svg" alt="TechStack Logo" />
+            </figure>
+            <figure class="modal__TechStackItem">
+              <img class="modal__TechStackItem--img" src="./assets/mixed_svg_logos/mysql.svg" alt="TechStack Logo" />
+            </figure>
+          </div>
+          <div class="modal__TechStack">
+            <figure class="modal__TechStackItem">
+              <img class="modal__TechStackItem--img" src="./assets/mixed_svg_logos/VScode.svg" alt="TechStack Logo" />
+            </figure>
+            <figure class="modal__TechStackItem">
+              <img class="modal__TechStackItem--img" src="./assets/mixed_svg_logos/github.svg" alt="TechStack Logo" />
+            </figure>
+            <figure class="modal__TechStackItem">
+              <img class="modal__TechStackItem--img" src="./assets/mixed_svg_logos/jira.svg" alt="TechStack Logo" />
+            </figure>
+            <figure class="modal__TechStackItem">
+              <img class="modal__TechStackItem--img" src="./assets/mixed_svg_logos/confluence.svg"
+                alt="TechStack Logo" />
+            </figure>
+            <figure class="modal__TechStackItem">
+              <img class="modal__TechStackItem--img" src="./assets/mixed_svg_logos/snow.svg" alt="TechStack Logo" />
+            </figure>
+          </div>
+        </div>
+        <div class="modal__half modal__contact">
+          <h3>Hinterlass' mir hier eine Nachricht</h3>
+          <h4>subtitle kommt hier hin</h4>
+          <p class="modal__contact">
+            hier kommen Felder für Name, E-mail und Nachricht untereinander.
+            <br />
+            <br />
+            Mit einem Button zum Versenden als Mail.
+          </p>
+        </div>
       </div>
     </div>
   </section>
   <section id="languages">
     <div class="container">
       <div class="row">
-        <h1 class="section__title">Mein <span class="text--coral">Tech Stack</span></h1>
-        <div class="language__list">
-          <div class="language">
-            <figure class="language__img--wrapper">
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png"
-                alt="Html Logo" class="language__img" />
-            </figure>
-            <span class="language__name">HTML</span>
-          </div>
-          <div class="language">
-            <figure class="language__img--wrapper">
-              <img src="https://cdn.iconscout.com/icon/free/png-256/css-131-722685.png" alt="CSS Logo"
-                class="language__img" />
-            </figure>
-            <span class="language__name">CSS</span>
-          </div>
-          <div class="language">
-            <figure class="language__img--wrapper">
-              <img src="https://cdn.iconscout.com/icon/free/png-256/javascript-1-225993.png" alt="JavaScript Logo"
-                class="language__img" />
-            </figure>
-            <span class="language__name">JavaScript</span>
-          </div>
-          <div class="language">
-            <figure class="language__img--wrapper">
-              <img src="https://cdn.iconscout.com/icon/free/png-256/typescript-3521774-2945272.png"
-                alt="TypeScript Logo" class="language__img" />
-            </figure>
-            <span class="language__name">TypeScript</span>
-          </div>
+        <h1 class="section__title">
+          Mein <span class="text--coral">Tech Stack</span>
+        </h1>
 
-          <div class="language">
-            <figure class="language__img--wrapper">
-              <img src="https://cdn.iconscout.com/icon/free/png-256/react-3-1175109.png" alt="React Logo"
-                class="language__img" />
-            </figure>
-            <span class="language__name">React</span>
-          </div>
-
+        <div class="modal__os">
+          <figure class="language__img--wrapper">
+            <img class="language__img" src="./assets/mixed_svg_logos/windows.svg" alt="TechStack Logo" />
+          </figure>
+          <figure class="language__img--wrapper">
+            <img class="language__img" src="./assets/mixed_svg_logos/mac.svg" alt="TechStack Logo" />
+          </figure>
+          <figure class="language__img--wrapper">
+            <img class="language__img" src="./assets/mixed_svg_logos/linux.svg" alt="TechStack Logo" />
+          </figure>
         </div>
+          <div class="language__list">
+            <div class="language">
+              <figure class="language__img--wrapper">
+                <img src='./assets/mixed_svg_logos/html.svg' alt="Html Logo" class="language__img" />
+              </figure>
+              <span class="language__name">HTML</span>
+            </div>
+            <div class="language">
+              <figure class="language__img--wrapper">
+                <img src='./assets/mixed_svg_logos/css.svg' alt="CSS Logo" class="language__img" />
+              </figure>
+              <span class="language__name">CSS</span>
+            </div>
+            <div class="language">
+              <figure class="language__img--wrapper">
+                <img src='./assets/mixed_svg_logos/javascript.svg' alt="JavaScript Logo" class="language__img" />
+              </figure>
+              <span class="language__name">JavaScript</span>
+            </div>
+            <div class="language">
+              <figure class="language__img--wrapper">
+                <img src='./assets/mixed_svg_logos/TypeScript.svg' alt="TypeScript Logo" class="language__img" />
+              </figure>
+              <span class="language__name">TypeScript</span>
+            </div>
+
+            <div class="language">
+              <figure class="language__img--wrapper">
+                <img src='./assets/mixed_svg_logos/react.svg' alt="React Logo" class="language__img" />
+              </figure>
+              <span class="language__name">React</span>
+            </div>
+            <div class="language">
+              <figure class="language__img--wrapper">
+                <img src='./assets/mixed_svg_logos/java.svg' alt="Java Logo" class="language__img" />
+              </figure>
+              <span class="language__name">Java</span>
+            </div>
+            <div class="language">
+              <figure class="language__img--wrapper">
+                <img src='./assets/mixed_svg_logos/c-sharp.svg' alt="C# Logo" class="language__img" />
+              </figure>
+              <span class="language__name">C#</span>
+            </div>
+            <div class="language">
+              <figure class="language__img--wrapper">
+                <img src='./assets/mixed_svg_logos/python.svg' alt="Python Logo" class="language__img" />
+              </figure>
+              <span class="language__name">Python</span>
+            </div>
+            <div class="language">
+              <figure class="language__img--wrapper">
+                <img src='./assets/mixed_svg_logos/mySQL.svg' alt="MySQL Logo" class="language__img" />
+              </figure>
+              <span class="language__name">MySQL</span>
+            </div>
+            <div class="language">
+              <figure class="language__img--wrapper">
+                <img src='./assets/mixed_svg_logos/VScode.svg' alt="VS Code Logo" class="language__img" />
+              </figure>
+              <span class="language__name">VS Code</span>
+            </div>
+            <div class="language">
+              <figure class="language__img--wrapper">
+                <img src='./assets/mixed_svg_logos/github.svg' alt="GitHub Logo" class="language__img" />
+              </figure>
+              <span class="language__name">Github</span>
+            </div>
+            <div class="language">
+              <figure class="language__img--wrapper">
+                <img src='./assets/mixed_svg_logos/confluence.svg' alt="Confluence Logo" class="language__img" />
+              </figure>
+              <span class="language__name">Confluence</span>
+            </div>
+            <div class="language">
+              <figure class="language__img--wrapper">
+                <img src='./assets/mixed_svg_logos/jira.svg' alt="Jira Logo" class="language__img" />
+              </figure>
+              <span class="language__name">Jira</span>
+            </div>
+          </div>
+
+
+
+        
+
       </div>
-    </div>
   </section>
   <section id="projects">
     <div class="container">
       <div class="row">
-        <h1 class="section__title">Hier sind einige meiner <span class="text--coral">Projekte</span></h1>
+        <h1 class="section__title">
+          Hier sind einige meiner <span class="text--coral">Projekte</span>
+        </h1>
         <ul class="project__list">
           <li class="project">
             <div class="project__wrapper">
-              <img src="./assets/e-library screenshot.png" class="project__img" alt="e-library img">
+              <img src="./assets/project1_screenshot.png" class="project__img" alt="e-library img" />
               <div class="project__description">
-                <h3 class="project__description--title">Buchhandel Projekt</h3>
-                <h4 class="project__description--sub-title">
-                  HTML und CSS
-                </h4>
+                <h3 class="project__description--title">
+                  Buchhandel Projekt
+                </h3>
+                <h4 class="project__description--sub-title">HTML und CSS</h4>
                 <p class="project__description--para">
-                  In diesem Projekt habe ich mich auf Responsive Design nur mit HTML und CSS konzentriert.
+                  In diesem Projekt habe ich mich auf Responsive Design nur
+                  mit HTML und CSS konzentriert.
                 </p>
                 <div class="project__description--links">
-                  <a href="https://github.com/canerogan/library-project" target="_blank" class="project__description--link">
+                  <a href="https://github.com/canerogan/library-project" target="_blank"
+                    class="project__description--link">
                     <i class="fab fa-github"></i>
                   </a>
-                  <a href="https://canerogan.github.io/library-project/" target="_blank" class="project__description--link">
+                  <a href="https://canerogan.github.io/library-project/" target="_blank"
+                    class="project__description--link">
                     <i class="fas fa-link"></i>
                   </a>
                 </div>
@@ -160,16 +303,20 @@
           </li>
           <li class="project">
             <div class="project__wrapper">
-              <img src="./assets/loopit.png" class="project__img" alt="Car subscription project">
+              <img src="./assets/loopit.png" class="project__img" alt="Car subscription project" />
               <div class="project__description">
-                <h3 class="project__description--title">Buchhandel Projekt (Inkrementeller Vorgang: JS)</h3>
+                <h3 class="project__description--title">
+                  Buchhandel Projekt (Inkrementeller Vorgang: JS)
+                </h3>
                 <h4 class="project__description--sub-title">
                   Html, CSS, JavaScript
                 </h4>
                 <p class="project__description--para">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed diam leo, scelerisque sed odio eget,
-                  luctus faucibus augue. Fusce volutpat iaculis dapibus. Lorem ipsum dolor sit amet, consectetur
-                  adipiscing elit. Maecenas id eleifend libero. In hac habitasse platea dictumst.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                  diam leo, scelerisque sed odio eget, luctus faucibus augue.
+                  Fusce volutpat iaculis dapibus. Lorem ipsum dolor sit amet,
+                  consectetur adipiscing elit. Maecenas id eleifend libero. In
+                  hac habitasse platea dictumst.
                 </p>
                 <div class="project__description--links">
                   <a href="https://github.com/canerogan" target="_blank" class="project__description--link">
@@ -184,16 +331,20 @@
           </li>
           <li class="project">
             <div class="project__wrapper">
-              <img src="./assets/loopit.png" class="project__img" alt="Car subscription project">
+              <img src="./assets/loopit.png" class="project__img" alt="Car subscription project" />
               <div class="project__description">
-                <h3 class="project__description--title">Buchhandel Projekt (Inkrementeller Vorgang: React) </h3>
+                <h3 class="project__description--title">
+                  Buchhandel Projekt (Inkrementeller Vorgang: React)
+                </h3>
                 <h4 class="project__description--sub-title">
                   Html, CSS, JavaScript und React
                 </h4>
                 <p class="project__description--para">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed diam leo, scelerisque sed odio eget,
-                  luctus faucibus augue. Fusce volutpat iaculis dapibus. Lorem ipsum dolor sit amet, consectetur
-                  adipiscing elit. Maecenas id eleifend libero. In hac habitasse platea dictumst.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                  diam leo, scelerisque sed odio eget, luctus faucibus augue.
+                  Fusce volutpat iaculis dapibus. Lorem ipsum dolor sit amet,
+                  consectetur adipiscing elit. Maecenas id eleifend libero. In
+                  hac habitasse platea dictumst.
                 </p>
                 <div class="project__description--links">
                   <a href="https://github.com/canerogan" target="_blank" class="project__description--link">
@@ -214,7 +365,7 @@
     <div class="row footer__row">
       <a href="#" class="footer__anchor">
         <figure class="footer__logo">
-          <img src="./assets/logo.svg" class="footer__logo--img" alt="">
+          <img src="./assets/logo.svg" class="footer__logo--img" alt="" />
         </figure>
         <span class="footer__logo--popper">
           Hoch
@@ -222,26 +373,14 @@
         </span>
       </a>
       <div class="footer__social--list">
-        <a href="https://www.github.com/canerogan" target="_blank" class="
-          footer__social--link
-          link__hover-effect
-          link__hover-effect--white
-        " target="_blank">GitHub</a>
-        <a href="https://www.linkedin.com/in/caner-o%C4%9Fan-2b99a61a6/" target="_blank" class="
-          footer__social--link
-          link__hover-effect
-          link__hover-effect--white
-        " target="_blank">LinkedIn</a>
-        <a href="mailto:canerogan@icloud.com" target="_blank" class="
-          footer__social--link
-          link__hover-effect
-          link__hover-effect--white
-        " target="_blank">Email</a>
-        <a href="./assets/Lebenslauf.pdf" target="_blank" class="
-          footer__social--link
-          link__hover-effect
-          link__hover-effect--white
-        " target="_blank">Resume</a>
+        <a href="https://www.github.com/canerogan" target="_blank"
+          class="footer__social--link link__hover-effect link__hover-effect--white" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/caner-o%C4%9Fan-2b99a61a6/" target="_blank"
+          class="footer__social--link link__hover-effect link__hover-effect--white" target="_blank">LinkedIn</a>
+        <a href="mailto:canerogan@icloud.com" target="_blank"
+          class="footer__social--link link__hover-effect link__hover-effect--white" target="_blank">Email</a>
+        <a href="./assets/Lebenslauf.pdf" target="_blank"
+          class="footer__social--link link__hover-effect link__hover-effect--white" target="_blank">Resume</a>
       </div>
       <div class="footer__copyright">Copyright © 2024 Caner Oğan</div>
     </div>
