@@ -193,9 +193,9 @@ nav {
 }
 
 .about-me__picture--mask {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
+  width: 160px;
+  height: 160px;
+  border-radius: 60%;
   overflow: hidden;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.16);
   margin-bottom: 28px;
@@ -552,6 +552,12 @@ footer {
   .project__description--sub-title {
     text-align: center;
     margin: 12px 0;
+  }
+  .modal{
+    display: none;
+  }
+  #easteregg {
+    display: none;
   }
 }
 
