@@ -499,6 +499,12 @@ footer {
   h1 {
     font-size: 28px;
   }
+  h2 {
+    font-size: 20px;
+  }
+  h4 {
+    font-size: 14px;
+  }
 
   .about-me__info--para {
     font-size: 18px;
@@ -557,13 +563,13 @@ footer {
     display: none;
   }
   #easteregg {
-    display: none;
+
   }
 }
 
 /* Modal zum kontaktieren */
 #easteregg {
-  display: none;
+
 }
 
 .modal {
